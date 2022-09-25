@@ -1,0 +1,46 @@
+{% extends "html/base/base_main_page_coach.html" %}
+
+
+{% block content %}
+
+    <a href="#popup" class="btn btn-primary">Модальное окно</a>
+    <div id="popup" class="popup">
+        <div class="popup_body">
+            <div class="popup_content">
+                <a href="#" class="popup_close">Х</a>
+                <div class="popup_title">Модальное окно</div>
+                <div class="popup_text">
+                    <form action="" method="post">
+                    <div class="mb-3">
+                        {{ form.hidden_tag() }}
+                        <p>
+                            {{ form.id.label }}<br>
+                            {{ form.id(class="form-control", type="text") }}<br>
+                            {% for error in form.id.errors %}
+                                <div class="alert alert-danger" role="alert">
+                                    {{ error }}
+                                </div>
+                            {% endfor %}
+                        </p>
+                        <p>{{ form.submit(type="submit", class="btn btn-primary") }}</p>
+                    </div>
+                        {{ message }}
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% if clients == "None" %}
+        <h2> Нет клиентов </h2>
+    {% else %}
+        {% for client in clients %}
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">{{ client }}</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endblock %}

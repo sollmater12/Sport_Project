@@ -1,0 +1,17 @@
+{% extends "html/base/base_main_page_coach.html" %}
+
+{% block content %}
+
+<!-- Begin page content -->
+<main role="main">
+    <div id="profile_info">
+<!--        <img id="profile_image" src="http://127.0.0.1:8887/data/img/pinkpanter.png" alt="картинка">-->
+        <h2 id="user_id">
+            {{ current_user.name }}
+        </h2>
+        <a id="href_register" href="/profile_settings" class="btn btn-primary">Настройки профиля</a>
+        <h2>Вы тренер</h2>
+        <a id="copy_id_button" class="btn btn-primary" onclick="copyId({{ current_user.id }})">Копировать id</a>
+    </div>
+</main>
+{% endblock %}

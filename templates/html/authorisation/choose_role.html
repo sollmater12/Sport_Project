@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="http://127.0.0.1:8887/templates/css/authorisation/choose_role.css" type="text/css"/>
+    <title>Выбор роли пользователя</title>
+</head>
+<body>
+    <p id="group_role_buttons">
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Переключить первый элемент</a>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Переключить второй элемент</button>
+    </p>
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+          <div class="card card-body">
+            Некоторый заполнитель для первого компонента сворачивания в этом примере множественного сворачивания. Эта панель по умолчанию скрыта, но открывается, когда пользователь активирует соответствующий триггер.
+             <a class="btn btn-primary" type="button" href="/register/client">Регистрация клиента</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
+          <div class="card card-body">
+            Некоторое содержимое заполнителя для второго компонента сворачивания в этом примере множественного сворачивания. Эта панель по умолчанию скрыта, но открывается, когда пользователь активирует соответствующий триггер.
+            <a class="btn btn-primary" type="button" href="/register/coach">Регистрация тренера</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

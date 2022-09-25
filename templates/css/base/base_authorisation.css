@@ -1,0 +1,53 @@
+#authorisation_form{
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 30px;
+}
+
+#authorisation_form_email, #authorisation_form_password{
+    font-size: 30px;
+}
+
+#authorisation_name{
+    text-align: center;
+}
+
+#authorisation_button_submit{
+    width: 200px;
+    height: 75px;
+    text-align: center;
+}
+
+
+#registration_form{
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 30px;
+}
+#registration_form_email, #registration_form_password, #registration_form_password_again,
+#registration_form_name, #registration_form_about, #registration_form_surname,
+#registration_form_nickname, #registration_form_age, #registration_form_country{
+    font-size: 30px;
+}
+#registration_name{
+    text-align: center;
+}
+
+#registration_label_button_submit{
+    text-align: center;
+}
+
+#registration_button_submit{
+    width: 200px;
+    height: 75px;
+    text-align: center;
+}
+
+#infocard_01{
+    float: right;
+}
+
+#infocrad_02{
+    float: left;
+}
+

@@ -1,0 +1,29 @@
+{% extends "html/base/base_authorisation.html" %}
+
+{% block content %}
+    <h1 id="authorisation_name">Авторизация</h1>
+    <form action="" method="post" id="authorisation_form">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.email.label }}<br>
+            {{ form.email(class="form-control", type="email", id="authorisation_form_email") }}<br>
+            {% for error in form.email.errors %}
+                <div class="alert alert-danger" role="alert">
+                    {{ error }}
+                </div>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.password.label }}<br>
+            {{ form.password(class="form-control", type="password", id="authorisation_form_password") }}<br>
+            {% for error in form.password.errors %}
+                <div class="alert alert-danger" role="alert">
+                    {{ error }}
+                </div>
+            {% endfor %}
+        </p>
+        <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
+        <p id="authorisation_button_submit">{{ form.submit(type="submit", class="btn btn-primary", id="authorisation_button_submit") }}</p>
+        <div>{{ message }}</div>
+    </form>
+{% endblock %}
